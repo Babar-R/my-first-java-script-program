@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const pricePerKg = 500; // price of chicken per kg in Rs
+
+// get user input for weight in grams
+let weightInGrams = prompt("Enter weight of chicken in grams:");
+
+// convert weight from grams to kg
+let weightInKg = weightInGrams / 1000;
+
+// calculate total price
+let totalPrice = weightInKg * pricePerKg;
+
+// display output to user
+document.write(`You have to pay ${totalPrice} Rs for ${weightInGrams} grams of chicken.`);
+</script>
+</html>
